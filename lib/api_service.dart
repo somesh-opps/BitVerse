@@ -303,7 +303,7 @@ class ApiService {
                 'plants_of_interest': plantsOfInterest,
               }),
             )
-            .timeout(const Duration(seconds: 30));
+            .timeout(const Duration(seconds: 90)); // Gemini can take up to 60-90s under load
         return _parse(res);
       });
 
